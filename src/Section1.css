@@ -16,7 +16,7 @@
     transition: .3s;
     will-change: transform;
     z-index: 10;
-    top: 59%;
+
 }
 
 .mySwiper .swiper-button-next {
@@ -120,6 +120,11 @@
     background-size: cover;
 }
 
+.swiper-slider-item-block-content-text-block {
+    height: 80px;
+    width: 100%;
+}
+
 .item1{
     background-image: url("img/image-corusel1.jpg"); 
 }
@@ -168,3 +173,35 @@
 }
 
 
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+    .mySwiper .swiper-button-prev {
+        left: 10%;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 10%;
+    }
+
+    .swiper-slider-item-block-content h1 {
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .swiper-slider-item-block-content {
+        width: 57%;
+    }
+
+    .swiper-slider-item-block-content h1 {
+        font-size: 30px;
+    }
+
+    .mySwiper .swiper-button-prev {
+        left: 7%;
+    }
+
+    .mySwiper .swiper-button-next{
+        right: 7%;
+    }
+}

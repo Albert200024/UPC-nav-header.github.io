@@ -1,5 +1,6 @@
 import './Nav.css';
 import logo from "./img/logo.png"
+import logoMobile from "./img/logoMobile.png"
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -7,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Nav() {
   return (
     <nav className='navbar'>
-        <div className='navbar-block'>
+        <div className='navbar-block '>
             <div className='navbar-logo'>
                 <a href="##">
                     <img src={logo} alt="" />
@@ -35,6 +36,21 @@ export default function Nav() {
                     </ul>
                 </div>
             </div>
+        </div>
+        <div className='mobile-nav'>
+            <div className='mobile-nav-block'>
+                <div className='mobile-nav-left-side'>
+                    <button className='open-btn-mobile'><span></span></button>
+                    <a href="" className='mobile-logo-block'>
+                        <img src={logoMobile} alt="" />
+                    </a>
+                </div>
+                <div className='mobile-nav-right-side'>
+                   <div className='navbar-mobile-social'>
+                        <span></span>
+                   </div>
+                </div>
+            </div>  
         </div>
     </nav>
   );

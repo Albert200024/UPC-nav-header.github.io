@@ -1,6 +1,8 @@
 import './Section1.css';
 import './App.css'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/swiper-bundle.css';
 // Import Swiper styles
 import 'swiper/css';
@@ -9,16 +11,18 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import React, { useRef } from 'react';
+import React, { useEffect } from 'react';
+
+
+
 
 export default function Section1() {
     
-   
+  useEffect(() => {
+    
+  }, []); // Run only once when the component mounts
 
-    const handleClassAdded = () => {
-      // Assuming you want to go to the next slide when a class is added
-      console.log("aheyr")
-    };
+
   return (
     <div className='section1'>
      <Swiper
@@ -31,15 +35,18 @@ export default function Section1() {
         }}
       
         navigation={true}
+   
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
             <div className='swiper-slider-item-block item1'>
                 <div className='swiper-slider-item-block-content'>
-                      <h1 className='slider-title animate-slider' onClick={handleClassAdded}>Welcome to Universal Programing Company</h1>
-                      <p>The software solutions developed by our company have been
+                      <h1 className='slider-title animate-slider'>Welcome to Universal Programing Company</h1>
+                      <div className='swiper-slider-item-block-content-text-block'>
+                          <p>The software solutions developed by our company have been
                           numerously awarded for usability and innovative features.</p>
+                      </div>
                       <button className='button swiper-slider-item-block-content-btn'>Read more</button>
                 </div>
             </div>
@@ -48,7 +55,9 @@ export default function Section1() {
             <div className='swiper-slider-item-block item2'>
                 <div className='swiper-slider-item-block-content'>
                       <h1>Welcome to Universal Programing Company</h1>
-                      <p>The software solutions developed by our company have been</p>
+                      <div className='swiper-slider-item-block-content-text-block'>
+                         <p>The software solutions developed by our company have been</p>
+                      </div>
                       <button className='button swiper-slider-item-block-content-btn'>Read more</button>
                 </div>
             </div>
@@ -56,9 +65,11 @@ export default function Section1() {
         <SwiperSlide>
             <div className='swiper-slider-item-block item1'>
                 <div className='swiper-slider-item-block-content'>
-                      <h1>Welcome to Universal Programing Company</h1>
-                      <p>The software solutions developed by our company have been</p>
-                      <button className='button swiper-slider-item-block-content-btn'>Read more</button>
+                     <h1>Welcome to Universal Programing Company</h1>
+                      <div className='swiper-slider-item-block-content-text-block'>
+                        <p>The software solutions developed by our company have been</p>
+                      </div>
+                      <button className='button swiper-slider-item-block-content-btn'>Read more</button>         
                 </div>
             </div>
         </SwiperSlide>
@@ -66,7 +77,9 @@ export default function Section1() {
             <div className='swiper-slider-item-block item2'>
                 <div className='swiper-slider-item-block-content'>
                       <h1>Welcome to Universal Programing Company</h1>
-                      <p>The software solutions developed by our company have been</p>
+                      <div className='swiper-slider-item-block-content-text-block'>
+                         <p>The software solutions developed by our company have been</p>
+                      </div>
                       <button className='button swiper-slider-item-block-content-btn'>Read more</button>
                 </div>
             </div>

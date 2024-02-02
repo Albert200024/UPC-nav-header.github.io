@@ -11,6 +11,10 @@
     line-height: 1.71429;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .navbar-block {
     max-width: 1200px;
     padding: 16px 15px;
@@ -115,3 +119,200 @@
     margin-bottom: 50px;
     padding-right: 40px;
 }
+
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+    .navbar-info-bottom ul li:not(.navbar-info-bottom-item-first, .navbar-info-bottom-item-last) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar-info-bottom-item-last {
+        padding-left: 10px;
+    }
+
+    .navbar-info-bottom-item-first {
+        padding-right: 10px;
+    }
+
+    .nabar-info-top ul li {
+        font-size: 12px;
+    }
+  }
+
+
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .navbar-block  {
+        width: 100%;
+    
+ 
+        column-gap:55px;
+        box-sizing: border-box;
+    }
+
+    .navbar-info {
+        width: 70%;
+    }
+
+    .navbar-info-bottom-item-last {
+        padding-left: 10px;
+    }
+
+    .navbar-info-bottom-item-first {
+        padding-right: 10px;
+    }
+
+    .navbar-logo {
+      
+        width: 8%;
+    }
+
+    .navbar-logo a {
+        display: block;
+    }
+
+    .navbar-logo a img {
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 767px) and (min-width: 300px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .navbar-block {
+        display: none;
+    }
+
+    .mobile-nav-block {
+        display: flex;
+        padding: 10px 5px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-nav-left-side {
+        display: flex;
+        align-items: center;
+    }
+
+    .open-btn-mobile {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        color: #9b9b9b;
+        background-color: transparent;
+        border: none;
+    }
+
+    .open-btn-mobile span {
+        width: 24px;
+        height: 4px;
+        background-color: #9b9b9b;
+        backface-visibility: hidden;
+        border-radius: 2px;
+        position: relative;
+        display: block;
+        margin: auto;
+        transition: .3s all ease;
+    }
+
+    .open-btn-mobile span::before{
+        transform-origin: 1.71429px center;
+        width: 24px;
+        height: 4px;
+        background-color: #9b9b9b;
+        backface-visibility: hidden;
+        border-radius: 2px;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -8px;
+        transition: .3s all ease;
+    }
+
+    .open-btn-mobile span::after{
+        transform-origin: 1.71429px center;
+        width: 24px;
+        height: 4px;
+        background-color: #9b9b9b;
+        backface-visibility: hidden;
+        border-radius: 2px;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        transition: .3s all ease;
+    }
+
+    .mobile-logo-block {
+        display: block;
+        width: 60%;
+    }
+
+    .mobile-logo-block img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-mobile-social {
+        top: 4px;
+        right: 2px;
+        width: 48px;
+        display: inline-block;
+        position: relative;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        cursor: pointer;
+        color: #9b9b9b;
+        position: fixed;
+        z-index: 1000;
+        margin-top: 5px;
+    }
+
+    .navbar-mobile-social span {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        line-height: 6px;
+        text-align: center;
+        background: #9b9b9b;
+        left: 50%;
+        margin-left: -3px;
+        border-radius: 50%;
+        transition: .3s all ease;
+        top: 50%;
+        margin-top: -3px;
+    }
+
+    .navbar-mobile-social span::before,  .navbar-mobile-social span::after {
+        bottom: 100%;
+        margin-bottom: 3px;
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        line-height: 6px;
+        text-align: center;
+        background: #9b9b9b;
+        left: 50%;
+        margin-left: -3px;
+        border-radius: 50%;
+        transition: .3s all ease;
+    }
+
+    .navbar-mobile-social span::before{
+        bottom: 100%;
+        margin-bottom: 3px;
+    }
+
+    .navbar-mobile-social span::after{
+        top: 100%;
+    margin-top: 3px;
+    }
+  }
