@@ -23,9 +23,6 @@
     left: 0;
     right: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .mobile-nav {
@@ -53,6 +50,8 @@
 
 .navbar-block {
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     transition: 0.3s;
 }
 
