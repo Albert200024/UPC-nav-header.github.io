@@ -14,8 +14,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import React, { useEffect } from 'react';
 
 
-
-
 export default function Section1() {
     
   useEffect(() => {
@@ -29,12 +27,15 @@ export default function Section1() {
 
         speed={1500}
         centeredSlides={true}
+   navigation={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
         }}
+
+        pagination={true}
       
-        navigation={true}
+        
    
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
@@ -42,7 +43,7 @@ export default function Section1() {
         <SwiperSlide>
             <div className='swiper-slider-item-block item1'>
                 <div className='swiper-slider-item-block-content'>
-                      <h1 className='slider-title animate-slider'>Welcome to Universal Programing Company</h1>
+                      <h1 className=''>Welcome to <span>Universal Programing Company</span></h1>
                       <div className='swiper-slider-item-block-content-text-block'>
                           <p>The software solutions developed by our company have been
                           numerously awarded for usability and innovative features.</p>
@@ -54,7 +55,7 @@ export default function Section1() {
         <SwiperSlide>
             <div className='swiper-slider-item-block item2'>
                 <div className='swiper-slider-item-block-content'>
-                      <h1>Welcome to Universal Programing Company</h1>
+                      <h1>Welcome to <span>Universal Programing Company</span></h1>
                       <div className='swiper-slider-item-block-content-text-block'>
                          <p>The software solutions developed by our company have been</p>
                       </div>
@@ -65,7 +66,7 @@ export default function Section1() {
         <SwiperSlide>
             <div className='swiper-slider-item-block item1'>
                 <div className='swiper-slider-item-block-content'>
-                     <h1>Welcome to Universal Programing Company</h1>
+                     <h1>Welcome to <span>Universal Programing Company</span></h1>
                       <div className='swiper-slider-item-block-content-text-block'>
                         <p>The software solutions developed by our company have been</p>
                       </div>
@@ -76,7 +77,7 @@ export default function Section1() {
         <SwiperSlide>
             <div className='swiper-slider-item-block item2'>
                 <div className='swiper-slider-item-block-content'>
-                      <h1>Welcome to Universal Programing Company</h1>
+                      <h1>Welcome to <span>Universal Programing Company</span></h1>
                       <div className='swiper-slider-item-block-content-text-block'>
                          <p>The software solutions developed by our company have been</p>
                       </div>

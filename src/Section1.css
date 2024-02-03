@@ -55,6 +55,8 @@
     right: 19px;
 }
 
+
+
 .mySwiper  .swiper-button-next::after, .mySwiper  .swiper-button-prev::after {
     position: absolute;
  
@@ -122,7 +124,7 @@
 
 .swiper-slider-item-block-content-text-block {
     height: 80px;
-    width: 100%;
+    width: 90%;
 }
 
 .item1{
@@ -137,6 +139,10 @@
    width: 60%;
    padding: 130px 0 120px;
    box-sizing: border-box;
+}
+
+.mySwiper .swiper-pagination-bullet{
+    display: none;
 }
 
 @keyframes fadeInUpSmall {
@@ -172,6 +178,16 @@
     animation:  customFadeIn 1s ease-in-out 0.1s;
 }
 
+.mySwiper .swiper-pagination-bullets  {
+
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.swiper-slider-item-block-content h1 span {
+
+    display: block;
+}
 
 @media screen and (max-width: 1439px) and (min-width: 1024px) {
     .mySwiper .swiper-button-prev {
@@ -203,5 +219,69 @@
 
     .mySwiper .swiper-button-next{
         right: 7%;
+    }
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 300px) {
+
+    .mySwiper  .swiper-button-next, .mySwiper  .swiper-button-prev{
+        display: none;
+    }
+
+    .mySwiper .swiper-pagination-bullet{
+        display: block;
+    }
+
+    
+    .swiper-slider-item-block-content-btn {
+       margin-top: 8px;
+       margin-bottom: 0;
+    }
+
+    .swiper-slider-item-block-content h1 {
+        font-size: 32px;
+    }
+
+    .swiper-slider-item-block-content {
+        width: 80%;
+        padding: 40px 25px 80px;
+        box-sizing: border-box;
+    }
+
+    .swiper-slider-item-block {
+        justify-content: flex-start;
+    }
+
+    .swiper-slider-item-block-content p {
+      
+        margin-top: 32px;
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    .swiper-slider-item-block-content {
+        width: 84%;
+        padding: 40px 15px 80px ;
+    }
+
+    .swiper-slider-item-block-content h1 {
+        font-size: 23px;
+    }
+
+    .swiper-slider-item-block-content p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .swiper-slider-item-block-content {
+        width: 95%;
+        padding: 40px 15px 80px ;
+    }
+
+    .swiper-slider-item-block-content p {
+        font-size: 15px;
     }
 }

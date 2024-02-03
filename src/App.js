@@ -1,6 +1,7 @@
 import './App.css';
 import Nav from './Nav';
 import Section1 from './Section1';
+import Slaq from './Slaq';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
          <Nav/>
       </header>
       <Section1/>
+      <Slaq/>
     </div>
   );
 }
