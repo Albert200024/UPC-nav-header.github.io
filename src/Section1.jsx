@@ -24,10 +24,9 @@ export default function Section1() {
   return (
     <div className='section1'>
      <Swiper
-
         speed={1500}
         centeredSlides={true}
-   navigation={true}
+        navigation={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
