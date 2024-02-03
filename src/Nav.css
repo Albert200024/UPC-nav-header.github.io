@@ -15,6 +15,10 @@
    display: none !important;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .position-fixed {
     background-color: white;
     position: fixed;
@@ -23,10 +27,6 @@
     left: 0;
     right: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.mobile-nav {
-    display: none;
 }
 
 .navbar-logo{
@@ -154,16 +154,6 @@
 
 .navbar-info-bottom ul li a:hover {
   color: #00a9ff;
-}
-
-.swiper-slider-item-block-content-btn {
-    background-image: linear-gradient(to right, #00aafc 0%, #00caad 100%);
-    color: #ffffff;
-    border-color: transparent;
-    margin-top: 42px;
-    padding-left: 40px;
-    margin-bottom: 50px;
-    padding-right: 40px;
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1024px) {

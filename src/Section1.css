@@ -4,6 +4,7 @@
       url("./font/SpaceMono-Regular.ttf") format("truetype");
 }
 
+/*============================ Swiper button styele ============================*/
 .mySwiper .swiper-button-next, .mySwiper .swiper-button-prev{
     position: absolute;
     transform: translate3d(0, -46%, 0);
@@ -54,8 +55,6 @@
 .mySwiper .swiper-button-prev::before{
     right: 19px;
 }
-
-
 
 .mySwiper  .swiper-button-next::after, .mySwiper  .swiper-button-prev::after {
     position: absolute;
@@ -111,6 +110,7 @@
     border-color: #00a9ff;
 }
 
+/*============================ Swiper slider item block ============================*/
 .swiper-slider-item-block {
     width: 100%;
     display: flex;
@@ -123,28 +123,53 @@
 }
 
 .swiper-slider-item-block-content-text-block {
-    height: 80px;
+   height: 100px;
     width: 90%;
 }
 
-.item1{
-    background-image: url("img/image-corusel1.jpg"); 
-}
-
-.item2 {
-    background-image: url("img/image-corusel2.jpg"); 
-}
-
+/*============================ Swiper slider item block content ============================*/
 .swiper-slider-item-block-content {
-   width: 60%;
+   width: 62%;
    padding: 130px 0 120px;
    box-sizing: border-box;
 }
 
-.mySwiper .swiper-pagination-bullet{
-    display: none;
+.swiper-slider-item-block-content h1{
+    font-size: 60px;
+    line-height: 1.2;
+    color: white;
+    font-family: "SpaceMono";
+    font-weight: 100;
 }
 
+.swiper-slider-item-block-content h1 span {
+    display: block;
+}
+
+.swiper-slider-item-block-content p {
+    font-size: 18px;
+    color: white;
+    padding-left: 0;
+    font-family: "SpaceMono";
+    letter-spacing: .04rem;
+    margin-top: 16px;
+}
+
+.swiper-slider-item-block-content-btn {
+    background-image: linear-gradient(to right, #00aafc 0%, #00caad 100%);
+    color: #ffffff;
+    border-color: transparent;
+
+    padding-left: 40px;
+    margin-bottom: 50px;
+    padding-right: 40px;
+}
+
+.animated-text{
+    animation:  fadeInUpSmall 1s ease-in-out;
+}
+
+/*============================ Animation texr slider item content ============================*/
 @keyframes fadeInUpSmall {
     0% {
         opacity: 0;
@@ -157,39 +182,7 @@
     }
 }
 
-.swiper-slider-item-block-content h1{
-    font-size: 60px;
-    line-height: 1.2;
-    color: white;
-    animation: fadeInUpSmall 1s ease both;
-    font-family: "SpaceMono";
-    font-weight: 100;
-}
-
-.swiper-slider-item-block-content p {
-    font-size: 18px;
-    color: white;
-    padding-left: 0;
-    font-family: "SpaceMono";
-    letter-spacing: .04rem;
-    margin-top: 16px;
-}
-
-.animate-slider{
-    animation:  customFadeIn 1s ease-in-out 0.1s;
-}
-
-.mySwiper .swiper-pagination-bullets  {
-
-    width: 25px !important;
-    height: 25px !important;
-}
-
-.swiper-slider-item-block-content h1 span {
-
-    display: block;
-}
-
+/*============================ Media ============================*/
 @media screen and (max-width: 1439px) and (min-width: 1024px) {
     .mySwiper .swiper-button-prev {
         left: 10%;

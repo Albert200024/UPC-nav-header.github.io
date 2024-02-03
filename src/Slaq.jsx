@@ -16,10 +16,10 @@ export default function Slaq (){
     };
   }, []); 
 
-    return (
-        <a href="#" className={`slaq ${scrollPosition > 200 ? "slaq-show" : "slaq-hide"}`}>
+  return (
+        <a href="#" className={`slaq ${scrollPosition > 150 ? "slaq-show" : "slaq-hide"}`}>
             <IoIosArrowUp />
         </a>
   
-    )
+  )
 }
