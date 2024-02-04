@@ -1,6 +1,6 @@
 import './Nav.css';
-import logo from "./img/logo.png"
-import logoMobile from "./img/logoMobile.png"
+import logo from "../img/logo.png"
+import logoMobile from "../img/logoMobile.png"
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";

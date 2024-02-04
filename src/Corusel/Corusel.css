@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Light";   /*Can be any text*/
     src: local("SpaceMono"),
-      url("./font/SpaceMono-Regular.ttf") format("truetype");
+      url("../font/SpaceMono-Regular.ttf") format("truetype");
 }
 
 /*============================ Swiper button styele ============================*/
@@ -165,8 +165,8 @@
     padding-right: 40px;
 }
 
-.animated-text{
-    animation:  fadeInUpSmall 1s ease-in-out;
+.active div h1, .active div p, .active div button {
+    animation:  fadeInUpSmall 1.5s ease-in-out;
 }
 
 /*============================ Animation texr slider item content ============================*/

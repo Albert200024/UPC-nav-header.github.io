@@ -1,7 +1,7 @@
-import "./Section1.css"
+import "./Corusel.css"
 import { useSpring, animated } from 'react-spring';
 
-export default function Section1SliderItem ({imgUrl, titleMas1, titleMas2, content}){
+export default function Section1SliderItem ({imgUrl, titleMas1, titleMas2, content, isActive}){
      const animation = useSpring({
         opacity: 1,
         transform: 'translateY(0)',
@@ -9,10 +9,10 @@ export default function Section1SliderItem ({imgUrl, titleMas1, titleMas2, conte
       });
 
       return (
-        <animated.div className="slider-item">
-            <div className='swiper-slider-item-block' style={{backgroundImage: `url(${imgUrl})`}}>
+        <animated.div className={`slider-item ${isActive ? "active" : ""}`}  >
+            <div className="swiper-slider-item-block" style={{backgroundImage: `url(${imgUrl})`}}>
                 <div className='swiper-slider-item-block-content'>
-                    <animated.h1 key={titleMas1} style={animation}>{titleMas1} <span>{titleMas2}</span></animated.h1>
+                    <animated.h1 key={titleMas1} >{titleMas1} <span>{titleMas2}</span></animated.h1>
                     <div className='swiper-slider-item-block-content-text-block'>
                         <p>{content}</p>
                     </div>
